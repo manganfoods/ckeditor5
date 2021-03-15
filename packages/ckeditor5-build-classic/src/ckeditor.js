@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -60,7 +61,8 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	HtmlEmbed
+	HtmlEmbed,
+	Alignment
 ];
 
 // Editor configuration.
@@ -77,6 +79,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'outdent',
 			'indent',
+			'alignment',
 			'|',
 			'uploadImage',
 			'blockQuote',
